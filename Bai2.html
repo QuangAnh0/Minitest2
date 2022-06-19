@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    arr=[27,3,20,27,2,20,3,8,12,27];
+    let count=0;
+    let a=prompt("Nhập phần tử a");
+    function demphantu(){
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]==a){
+                count++;
+            }
+        }
+return count;
+    }
+    document.write("Có " + demphantu()+" phần tử " +a);
+</script>
+</body>
+</html>

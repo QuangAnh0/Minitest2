@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    arr=[];
+    function taomang(){
+    for (i=0;i<500;i++){
+       c= arr.push(i);}
+    return arr;
+    }
+    document.write(taomang())
+    function songuyento(n){
+        if (n<2) return false;
+        if (n<4) return true;
+        if (n>=4){
+            for (let i=2;i<n;i++){
+                if (n%i==0) return false;
+            }
+        }return true;
+    }
+    let S=0
+    function tinhtong(){
+        for (let i=0;i<arr.length;i++){
+            if (songuyento(arr[i])){
+                document.write(arr[i]+"<br>");
+                S+=arr[i];
+            }
+        }return S;
+    }
+    document.write("Tổng các số nguyên tố ở trên là " + tinhtong());
+</script>
+</body>
+</html>
